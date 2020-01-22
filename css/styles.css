@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+    font-family: Lato, sans-serif;
+}
+
+header {
+    background-color: rgb(202, 238, 255);
+    padding: 20px 0;
+}
+
+header img { 
+    width: 400px
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container { 
+    width: 960px;
+    margin: 0 auto;
+}
+
+header form input {
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(255, 253, 250);
+    outline: none;
+}
+
+header form button {
+    border: 1px solid #a9a9a9;
+    padding: 10px 20px 10px 20px;
+    font-size: 14px;
+    color: #666;
+    outline: none;
+}
+
+header form {
+    display: flex;
+}
+
+nav {
+   
+    text-align: center;
+    background-color: rgb(240 240 240);
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+
+}
+
+nav ul li a:hover {
+    background-color: #f8f8f8;
+}
+
+main {
+    display: flex;
+    padding: 20px 0;
+}
+
+aside {
+    width: 300px;
+    padding: 20px;
+    border-right: 1px solid rgb(204, 204, 204);
+}
+
+aside > div {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    width: calc(100% - 300px);
+    flex-wrap: wrap;
+}
+
+aside select {
+    height: 150px;
+    width: 100%;
+}
+
+aside select option {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.produto {
+    width: 33%;
+    padding: 40px;
+}
+
+section .produto {
+    flex-wrap: wrap;
+}
+
+.produto:hover {
+    outline: 1px solid #ccc;
+}
+
+.produto img {
+    width: 100%;
+}
+
+.produto h2 {
+    font-size: 18px;
+    margin: 0;
+}
+.produto p {
+    color: #666
+}
+
+.produto .preco,
+.produto .parcelamento {
+    text-align: center;
+}
+
+.produto .parcelamento {
+    font-size: 12px;
+}
+
+.produto .acoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produto .acoes a {
+    display: flex;
+    flex-direction: column;
+    color: rgb(104, 101, 101);
+    text-decoration: none;
+    font-size: 10px;
+    text-align: center; 
+}
+
+.produto:hover .acoes a {
+    color: black;
+}
+
+footer {
+    padding: 5px 70px;
+    background-color: rgb(54, 53, 53);
+    color: white;
+    font-size: 14px;
+    
+}
